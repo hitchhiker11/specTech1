@@ -298,7 +298,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/views/components/header.phtml';
     // execute when DOM ready
     $(document).ready(function () {
         wialon.core.Session.getInstance().initSession("https://hst-api.wialon.com"); // init session
-        wialon.core.Session.getInstance().loginToken("your_token", "", // try to login
+        wialon.core.Session.getInstance().loginToken("<your_token>", "", // try to login
             function (code) { // login callback
                 if (code){ msg(wialon.core.Errors.getErrorText(code)); return; }
                 msg("Logged successfully");
